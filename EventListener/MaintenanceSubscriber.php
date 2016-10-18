@@ -10,18 +10,17 @@ use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 /**
- * Class MaintenanceSubscriber
- * @package Iulyanp\MaintenanceBundle\EventListener
+ * Class MaintenanceSubscriber.
  */
 class MaintenanceSubscriber implements EventSubscriberInterface
 {
     /**
-     * @var LoggerInterface $logger
+     * @var LoggerInterface
      */
     private $logger;
 
     /**
-     * @var String
+     * @var string
      */
     private $maintenance;
 
@@ -29,7 +28,7 @@ class MaintenanceSubscriber implements EventSubscriberInterface
      * MaintenanceSubscriber constructor.
      *
      * @param Router $router
-     * @param String $maintenance
+     * @param string $maintenance
      */
     public function __construct(Router $router, $maintenance)
     {
@@ -68,8 +67,6 @@ class MaintenanceSubscriber implements EventSubscriberInterface
             $response = new RedirectResponse('/');
             $event->setResponse($response);
         }
-
-        return;
     }
 
     /**
