@@ -5,8 +5,7 @@ namespace Iulyanp\MaintenanceBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class IulyanpMaintenanceBundle
- * @package Iulyanp\MaintenanceBundle
+ * Class IulyanpMaintenanceBundle.
  */
 class IulyanpMaintenanceBundle extends Bundle
 {
