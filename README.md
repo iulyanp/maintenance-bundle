@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.org/iulyanp/maintenance-bundle.svg?branch=master)](https://travis-ci.org/iulyanp/maintenance-bundle)
+[![StyleCI](https://styleci.io/repos/71278770/shield?branch=master)](https://styleci.io/repos/71278770)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/iulyanp/maintenance-bundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/iulyanp/maintenance-bundle/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/iulyanp/maintenance-bundle/badges/build.png?b=master)](https://scrutinizer-ci.com/g/iulyanp/maintenance-bundle/build-status/master)
+
 MaintenanceBundle
 -----------------
 
