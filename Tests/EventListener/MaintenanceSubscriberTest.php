@@ -4,7 +4,7 @@
  * Created by PhpStorm.
  * User: iulianp
  * Date: 15.10.2016
- * Time: 19:14
+ * Time: 19:14.
  */
 class MaintenanceSubscriberTest extends \PHPUnit_Framework_TestCase
 {
@@ -157,7 +157,7 @@ class MaintenanceSubscriberTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @param Object $class
+     * @param object $class
      * @param array  $getters
      *
      * @return PHPUnit_Framework_MockObject_MockObject
