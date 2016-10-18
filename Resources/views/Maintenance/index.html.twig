@@ -1,0 +1,24 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+    Site in Maintenance
+{% endblock %}
+
+{% block body %}
+    <article>
+        <h1>{{ title|trans({}, 'IulyanpMaintenanceBundle') }}</h1>
+        <div>
+            <p>{{ description|trans({}, 'IulyanpMaintenanceBundle') }}</p>
+            <p>&mdash; {{ signature }}</p>
+        </div>
+    </article>
+
+    <style>
+        body { text-align: center; padding: 180px; background: #efefef; }
+        h1 { font-size: 50px; }
+        body { font: 20px Helvetica, sans-serif; color: #2e3436; }
+        article { display: block; text-align: left; width: 650px; margin: 0 auto; }
+        a { color: #dc8100; text-decoration: none; }
+        a:hover { color: #333; text-decoration: none; }
+    </style>
+{% endblock %}

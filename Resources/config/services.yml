@@ -1,0 +1,9 @@
+services:
+    iulyanp_maintenance.maintenance_subscriber:
+        class: Iulyanp\MaintenanceBundle\EventListener\MaintenanceSubscriber
+        arguments:
+            - '@router'
+        calls:
+            - [setLogger, ['@?logger']]
+        tags:
+            - { name: kernel.event_subscriber }

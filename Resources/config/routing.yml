@@ -1,0 +1,3 @@
+iulyanp_maintenance_homepage:
+    path:     /maintenance
+    defaults: { _controller: IulyanpMaintenanceBundle:Maintenance:index }
