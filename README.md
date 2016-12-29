@@ -38,14 +38,24 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-
+            
+            ...
+            
             new Iulyanp\MaintenanceBundle\IulyanpMaintenanceBundle(),
         );
     }
 }
 ```
 
-#### Step 3: Configure the bundle
+#### Step 3: Import the bundle routes
+
+```
+iulyanp_maintenance:
+    resource: "@IulyanpMaintenanceBundle/Resources/config/routing.yml"
+    prefix:   /
+```
+
+#### Step 4: Configure the bundle
 
 In order for the bundle to know when to set your website in maintenance you should configure it.
 
@@ -64,3 +74,13 @@ You activate the maintenance by changing the enabled config to true but your web
 
 The layout parameters are for changing the default title, message and signature from the default layout.
 You can translate these configurations in the translation files.
+
+> Note! Do not forget to activate the translations on Symfony framework.
+
+```
+# config.yml
+
+framework:
+    translator:      { fallbacks: ["%locale%"] }
+    ...
+```
